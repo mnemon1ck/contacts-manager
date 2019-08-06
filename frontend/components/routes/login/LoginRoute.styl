@@ -1,0 +1,29 @@
+.LoginRoute
+	width: 400px;
+	margin: auto;
+	border: 1px solid $color.main;
+	background: $color.white;
+	.LoginRoute-tabs
+		display: flex;
+	.LoginRoute-tab
+		width: 50%
+		height: 100%;
+		font-size: 1rem;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: $weight.bold;
+		padding: 10px;
+		&.login
+			color: black;
+		&.register
+			color: $color.white;
+			cursor: pointer;
+			background: $color.main;
+			&:hover
+				background: alpha($color.main, .8);
+	.LoginRoute-invalid-credentials
+		padding: 10px;
+	.LoginRoute-submit-button
+		margin: 10px;

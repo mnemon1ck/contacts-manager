@@ -1,0 +1,25 @@
+.Header
+	background: $color.main;
+	height: 40px;
+	color: $color.white;
+	position: relative;
+	.Header-logo
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		transform: translateY(-50%);
+		font-size: 1.2rem;
+	.Header-logout
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		font-size: 1rem;
+		transform: translateY(-50%);
+		cursor: pointer;
+		padding-left: 22px;
+		background-image: $icon.logout;
+		background-repeat: no-repeat;
+		background-size: 18px;
+		background-position: left center;
+		&:hover
+			text-decoration: underline;

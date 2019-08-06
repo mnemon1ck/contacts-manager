@@ -1,0 +1,19 @@
+.CMButton
+	color: $color.white;
+	cursor: pointer;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&.blue:not(.disabled)
+		background: $color.main;
+		cursor: pointer;
+		&:hover
+			background: alpha($color.main, 0.8);
+	&.red:not(.disabled)
+		background: $color.error;
+		&:hover
+			background: alpha($color.error, 0.8);
+	&.disabled
+		background: gray;
+		cursor: default;

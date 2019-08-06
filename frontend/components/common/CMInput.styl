@@ -1,0 +1,32 @@
+.CMInput
+	margin: 10px;
+	.CMInput-control
+		display: block;
+		outline: none;
+		padding: 10px;
+		width: 100%;
+		font-size: 1rem;
+		border-width: 2px;
+		border-style: solid;
+		font-weight: $weight.thin;
+		box-sizing: border-box;
+		&.valid
+			border-color: rgb($color.main);
+		&.invalid
+			border-color: rgb($color.error);
+	.CMInput-validation
+		margin: 2px 0;
+		font-size: 0.8rem;
+		font-weight: $weight.medium;
+		padding-left: 16px;
+		background-repeat: no-repeat;
+		background-size: 12px;
+		background-position: 0 1px;
+		&.passed
+			color: $color.success;
+			background-image: $icon.green-check
+		&.failed
+			color: $color.error;
+			background-image: $icon.red-cross;
+	.validations
+		margin-top: 4px;

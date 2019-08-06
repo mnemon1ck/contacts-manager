@@ -1,0 +1,29 @@
+.RegisterRoute
+	width: 400px;
+	margin: auto;
+	background: $color.white;
+	border: 1px solid $color.main;
+	.RegisterRoute-tabs
+		display: flex;
+	.RegisterRoute-tab
+		width: 50%
+		height: 100%;
+		font-size: 1rem;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+		font-weight: $weight.bold;
+		&.register
+			color: black;
+		&.login
+			color: $color.white;
+			cursor: pointer;
+			background: $color.main;
+			&:hover
+				background: alpha($color.main, 0.8);
+	.RegisterRoute-submit-button
+		margin: 10px;
+	.RegisterRoute-username-taken-error
+		padding: 10px;

@@ -1,0 +1,35 @@
+.CMModal
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	.CMModal-cross
+		height: 18px;
+		width: 18px;
+		background-image: $icon.cross;
+		background-repeat: no-repeat;
+		background-size: contain;
+		cursor: pointer;
+	.CMModal-container
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		background: $color.white;
+		width: 380px;
+		border: 1px solid $color.main;
+	.CMModal-header
+		color: $color.white;
+		font-size: 1rem;
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&.default
+			background: $color.main;
+		&.error
+			background: $color.error;
+		&.success
+			background: $color.success;
